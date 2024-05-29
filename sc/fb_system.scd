@@ -181,6 +181,7 @@ Ndef(\organic_patterns_b, {
 	// --------------------------------- MIXER ----------------------------------
 
 	snd_out = (synth * \synth_amp.kr(1)) + (rev * \rev_amp.kr(0.707)) + (glitches * 0.707); //+ (clicks * 4);
+	snd_out = LeakDC.ar(snd_out);
 	snd_out = LPF.ar(snd_out, 18e3);
 	(snd_out*\amp.kr(0.5)).tanh;
 }).play;
