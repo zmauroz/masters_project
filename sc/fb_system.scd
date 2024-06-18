@@ -81,7 +81,7 @@ Ndef(\organic_patterns_b, {
     // Salida de retroalimentación local
     LocalOut.ar(fb);
 
-	Out.kr(~td_busses[0], fb);
+	// Out.kr(~td_busses[0], fb);
 
 	// --------------------------------- SYNTH ---------------------------------
 
